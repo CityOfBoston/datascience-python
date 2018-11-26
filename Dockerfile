@@ -1,6 +1,8 @@
 FROM ubuntu:18.04
 MAINTAINER albert@boston.gov
 
+RUN apt-get clean && apt-get update && apt-get install -y locales
+
 # Ensure UTF-8 locale.
 RUN locale-gen en_US.UTF-8
 
