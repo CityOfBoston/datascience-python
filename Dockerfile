@@ -17,7 +17,7 @@ ENV LANG=en_US.UTF-8 \
     CIVIS_CONDA_VERSION=4.3.30 \
     CIVIS_PYTHON_VERSION=3.6.4
 
-RUN DEBIAN_FRONTEND=noninteractive apt-get update -y --no-install-recommends && \
+RUN apt-get update -y --no-install-recommends && \
   apt-get install -y --no-install-recommends software-properties-common && \
   apt-get install -y --no-install-recommends \
         make \
