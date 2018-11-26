@@ -44,6 +44,7 @@ dependencies:
 - statsmodels=0.8.0
 - urllib3=1.22
 - xgboost=0.6a2
+- pymssql==2.1.4
 - pip:
   - civis==1.9.0
   - civisml-extensions==0.1.8
@@ -57,6 +58,4 @@ dependencies:
   - pysftp==0.2.9
   - python-simple-hipchat==0.4.0
   - requests-toolbelt==0.8.0
-  - tensorflow==1.7.0
-  - pymssql==2.1.4
-  
+  - tensorflow==1.7.0  
