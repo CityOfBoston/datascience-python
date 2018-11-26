@@ -35,6 +35,7 @@ RUN apt-get update -y --no-install-recommends && \
         wget \
         ca-certificates \
         dirmngr \
+        gpg-agent \
         curl && \
   apt-get clean -y && \
   rm -rf /var/lib/apt/lists/*
