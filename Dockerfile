@@ -71,6 +71,11 @@ RUN mkdir -p ${HOME}/.config/matplotlib && \
 # Enable widgetsnbextension for jupyter widgets.
 RUN jupyter nbextension enable --py widgetsnbextension
 
+# Postgres configure
+RUN add-apt-repository "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -sc)-pgdg main"
+RUN wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
+RUN apt-get update -y --no-install-recommends && apt-get install -y -y --no-install-recommends postgresql-9.6
+
 # Instruct joblib to use disk for temporary files.
 ENV JOBLIB_TEMP_FOLDER=/tmp
 
