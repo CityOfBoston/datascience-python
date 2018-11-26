@@ -34,6 +34,7 @@ RUN apt-get update -y --no-install-recommends && \
         libxrender1 \
         wget \
         ca-certificates \
+        dirmngr \
         curl && \
   apt-get clean -y && \
   rm -rf /var/lib/apt/lists/*
