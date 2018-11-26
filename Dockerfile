@@ -1,6 +1,8 @@
 FROM ubuntu:18.04
 MAINTAINER albert@boston.gov
 
+ENV DEBIAN_FRONTEND noninteractive
+
 # Ensure UTF-8 locale.
 RUN apt-get clean && apt-get update && apt-get install -y --no-install-recommends apt-utils
 RUN apt-get install -y locales
@@ -76,3 +78,5 @@ ENV VERSION=4.2.0 \
     VERSION_MAJOR=4 \
     VERSION_MINOR=2 \
     VERSION_MICRO=0
+    
+ENV DEBIAN_FRONTEND teletype
