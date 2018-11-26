@@ -72,6 +72,7 @@ RUN mkdir -p ${HOME}/.config/matplotlib && \
 RUN jupyter nbextension enable --py widgetsnbextension
 
 # Postgres configure
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 7FCC7D46ACCC4CF8
 RUN add-apt-repository "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -sc)-pgdg main"
 RUN wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
 RUN apt-get update -y --no-install-recommends && apt-get install -y -y --no-install-recommends postgresql-9.6
