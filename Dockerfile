@@ -2,6 +2,7 @@ FROM ubuntu:18.04
 MAINTAINER albert@boston.gov
 
 # Ensure UTF-8 locale.
+RUN apt-get clean && apt-get update && apt-get install -y locales
 RUN update-locale LANG="en_US.UTF-8"
 
 # Set environment variables for UTF-8, conda, and shell environments
