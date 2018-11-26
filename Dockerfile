@@ -37,6 +37,7 @@ RUN apt-get update -y --no-install-recommends && \
         dirmngr \
         gpg-agent \
         curl && \
+        vim && \
   apt-get clean -y && \
   rm -rf /var/lib/apt/lists/*
 
