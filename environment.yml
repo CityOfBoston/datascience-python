@@ -58,3 +58,5 @@ dependencies:
   - python-simple-hipchat==0.4.0
   - requests-toolbelt==0.8.0
   - tensorflow==1.7.0
+  - pymssql==2.1.4
+  
