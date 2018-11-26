@@ -1,5 +1,5 @@
-FROM ubuntu:14.04
-MAINTAINER support@civisanalytics.com
+FROM ubuntu:18.04
+MAINTAINER albert@boston.gov
 
 # Ensure UTF-8 locale.
 RUN locale-gen en_US.UTF-8
